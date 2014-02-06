@@ -26,7 +26,7 @@
   
 <link rel="shortcut icon" href="/img/favicon.ico">
 
-<link href='http://fonts.googleapis.com/css?family=Raleway:800,100'   rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:800,400'   rel='stylesheet' type='text/css'>
 <!link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Exo:500' rel='stylesheet' type='text/css'>
 
@@ -42,21 +42,45 @@
 
   <div id="container" class="cf center">
     
-  <header class="hearts">
+  <header>
+	  
 	  <img src="img/logo/logo.png" alt="matrimonio francescano">
 	  
-	  <div class="disclaimer center negativemargin">attenzione i contenuti di questo sito sono altamente fuori schema</div>
+	  <div class="exo center negativemargin">ATTENZIONE, i contenuti di questo sito sono altamente <span class="underline">fuori schema</span></div>
 	 
 	  <div id="subscribe" class="center"  href="javascript:void(0);">iscriviti</div>
 
 	  <div>&nbsp;</div>
 	      
   </header>
+	  	  
+
+
+
+
+
+
+  <div id="appear">
 	  
-	  
-  <div id="subdetails">Content.....</div>
+	  <div class="exo box">
+  
+	  <form action="http://5p2p.us3.list-manage.com/subscribe/post" method="POST">
+	  	<input type="hidden" name="u" value="afa7dd5aff58b70795f780470" />
+	  	<input type="hidden" name="id" value="4f8b1d9b02" />
+	  	<input class="formemail"
+	  	type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value=""  placeholder="il tuo indirizzo email" />
+	  	<input class="formsubmit" type="submit" name="submit" value="invia"/>
+	  </form>
+
+  
+  </div>
+	  <a href="http://5p2p.it"><img class="center" width="80" src="/img/logo/5p2p-dark.jpg"></a>
+
 
   </div>
+
+  </div>
+
   
 
   
@@ -66,8 +90,9 @@
 
   <script>
   $("#subscribe").click(function(){
-     $("#subdetails").fadeIn( function(){});
-     scrollToElement('#subdetails');
+     $("#appear").fadeIn( function(){});
+     $("#subscribe").css( "background", "gray");
+     scrollToElement('#appear');
 	 
   });
   </script>

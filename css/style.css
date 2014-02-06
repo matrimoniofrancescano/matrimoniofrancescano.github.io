@@ -71,7 +71,8 @@ img, embed, object, video { max-width: 100%; }
 /* 3. CORE TYPOGRAPHY
 ----------------------------------------------------------------------------------------*/
 body {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Raleway, "Helvetica", sans-serif;
+  font-weight: 400;
   font-size: 1em;
   line-height: 1.618em;
   color: #333;
@@ -139,10 +140,13 @@ footer p { float: left; margin-right:1em; }
 /* 6. CUSTOM LAYOUT & TYPOGRAPHY (Baby bear)
 ----------------------------------------------------------------------------------------*/
 #container {
-	margin: 10em;
     padding: 0em;
     max-width: 40em; /*30em*/
-    margin: auto;
+    margin: 0 auto;
+	height:100%;
+	background-image: url(/img/texture/hearts.png);
+	background-repeat: repeat;
+	
   }
 
 aside { width: 100%; }
@@ -152,6 +156,20 @@ aside { width: 100%; }
 	margin: 0 auto;
 }
 	
+
+html, body {
+	height: 100%;
+}
+
+.underline {
+	text-decoration:underline;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
 /* 7. BROWSER AND NON-SEMANTIC STYLING
 ----------------------------------------------------------------------------------------*/
 .cf:before, .cf:after { content: ""; display: block; }
@@ -162,13 +180,14 @@ aside { width: 100%; }
 ----------------------------------------------------------------------------------------*/
 body {
 	border-top: 4px solid black;
+	padding:0 ;
 }
 
 .negativemargin{
 	margin-top:	-1em;
 }
 
-.disclaimer{
+.exo{
 	font-family: 'Exo', sans-serif;
 	font-weight: 500;
 }
@@ -195,29 +214,64 @@ body {
    background: #740000;
 }
 
-#subdetails {
+#appear {
 	display: none;
-	height: 500px;
+}
+
+.box{
 	margin: 2em 0;
+	padding: 2em;
+	background: #BEBEBE;
+	text-align: left;
+	
 }
 
 .hearts {
 	background-image: url(/img/texture/hearts.png);
 	background-repeat: repeat;
 }
-   
-  
+
+footer {
+	padding-top: 100px;
+	/*background: #BEBEBE;*/
+}
+
+.formemail {
+	margin-top: .5em;
+	padding: 0.3em;
+	display: inline;
+	width: 78%;
+	font-size: 1em;
+	-moz-border-radius: 5px;
+		 border-radius: 5px;
+}
+.formsubmit {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	
+	width: 18%;
+	min-width:100px;
+	display: inline;
+	background: red;
+	color: white;
+	border: 0px;
+	font-size: 1em;
+	padding: 0.4em;
+	-moz-border-radius: 5px;
+		 border-radius: 5px;
+}
+
+
 
 /* 10. CUSTOM LAYOUT & TYPOGRAPHY (iPHONE)
 ----------------------------------------------------------------------------------------*/
 @media screen and (min-width: 0em) and (max-width: 29.999em) {
 
-#container { max-width: 100%; }
+#container { max-width: 100%;}
 
-.subscribe {font-size: 1em;}
+#subscribe {font-size: 1em;}
 
-.disclaimer{font-size: 0.6em;}
-
+.box {text-align: center;}
 
 }
 

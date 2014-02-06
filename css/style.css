@@ -261,6 +261,13 @@ footer {
 		 border-radius: 5px;
 }
 
+.formsubmit:hover {
+   background: #A60000;
+}
+.formsubmit:active {
+   background: #740000;
+}
+
 
 
 /* 10. CUSTOM LAYOUT & TYPOGRAPHY (iPHONE)
